@@ -43,6 +43,6 @@ damp_override/angular = -1.0
 
 frames = SubResource( 1 )
 animation = "default"
-frame = 3
+frame = 4
 
 

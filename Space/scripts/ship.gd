@@ -21,6 +21,8 @@ const JUMP_SPEED = 150
 const SLIDE_STOP_VELOCITY = 1.0 # One pixel per second
 const SLIDE_STOP_MIN_TRAVEL = 1.0 # One pixel
 
+const TIPO = 'CENARIO'
+
 var velocity = Vector2()
 var on_air_time = 100
 var jumping_animation = false
@@ -31,6 +33,7 @@ var time_to_charge_again = 10
 var velocity_on_collision = 0
 
 onready var stamina_bar = get_node("../staminabar")
+#onready var enemies = preload("res://scenes/robo.tscn").get_nodes_in_group("inimigo")
 
 func _fixed_process(delta):
 	# Create forces
